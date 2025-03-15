@@ -27,7 +27,7 @@ This guide shows how to connect Pollinations AI to **OpenWebUI** for instant acc
 
 ### Example Configuration Screen
 
-![Pollinations AI Connection Example](pollinations-connection-example.png)
+![Pollinations AI Connection Example](pollinations_connection.jpg)
 
 ---
 
