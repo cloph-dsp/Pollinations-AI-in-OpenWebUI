@@ -11,9 +11,9 @@ This guide shows how to connect Pollinations AI to **OpenWebUI** for instant acc
 
 ## Setup in OpenWebUI
 
-### 1. Go to **Settings > Connections**
+### 1. Go to **Settings > Admin > Connections**
 
-- Click **“Add Connection”** or edit an existing one.
+- on OpenAI connections, click **“Add Connection”** or edit an existing one.
 
 ### 2. Configure the connection:
 
@@ -22,12 +22,6 @@ This guide shows how to connect Pollinations AI to **OpenWebUI** for instant acc
 | **URL**      | `https://text.pollinations.ai/openai`       |
 | **Key**      | `dummy-key` (any text works; not validated) |
 | **Model IDs**| Add one or more model names (see below)     |
-
----
-
-### Example Configuration Screen
-
-![Pollinations AI Connection Example](pollinations_connection.jpg)
 
 ---
 
@@ -42,10 +36,8 @@ You can add any of the following models:
 | `openai-reasoning`    | o3-mini                                   |
 | `searchgpt`           | SearchGPT (web search is required)        |
 | `mistral`             | Mistral                                   |
-| `deepseek-reasoner`   | DeepSeek R1                               |
 | `deepseek-r1`         | DeepSeek R1-Qwen                          |
 | `deepseek-r1-llama`   | DeepSeek R1-Llama                         |
-| `deepseek`            | DeepSeek-V3                               |
 | `llama`               | Llama 3.3                                 |
 | `llamalight`          | Llama 3.1                                 |
 | `gemini`              | Gemini 2.0                                |
@@ -56,11 +48,19 @@ You can add any of the following models:
 > 📌 You can always check the full model list at:  
 **https://text.pollinations.ai/models**
 
+### Model Compatibility and Issues
+
+Note: Some models like "unity" and "midijourney" are not useful in OpenWebUI. Additionally, models dependent on the DeepSeek API, such as "deepseek" and "deepseek-reasoner", may encounter a "500: DeepSeek API error: 402 Payment Required" error.
+
+### Example
+
+![Pollinations AI Connection Example](pollinations_connection.jpg)
+
 ---
 
 ## 3. Save and use
 
-Click **“Save”** — the models will now be available in the OpenWebUI interface.
+Click **“Save”** — the models will now be available in the OpenWebUI models list.
 
 ---
 
