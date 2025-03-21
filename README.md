@@ -23,21 +23,22 @@ _Access top language models for free_
 
 ## Available Models
 
-| Model ID           | Description                  |
-|--------------------|------------------------------|
-| `openai-large`     | GPT-4o                       |
-| `openai`           | GPT-4o-mini                 |
-| `openai-reasoning` | o3-mini (Reasoning)         |
-| `searchgpt`        | SearchGPT (web search req.) |
-| `mistral`          | Mistral 3.1 (Vision)        |
-| `deepseek-r1`      | DeepSeek R1-Qwen (Reasoning)|
-| `deepseek-r1-llama`| DeepSeek R1-Llama 70B       |
-| `llama`            | Llama 3.3 70B              |
-| `llamalight`       | Llama 3.1 8B               |
-| `gemini`           | Gemini 2.0 Flash           |
-| `qwen-coder`       | Qwen 2.5 Coder 32B         |
-| `claude`           | Claude 3.5 Haiku           |
-| `phi`              | Phi-4 Instruct             |
+| Model ID           | Description                          |
+|--------------------|--------------------------------------|
+| `openai-large`     | GPT-4o                               |
+| `openai`           | GPT-4o-mini                         |
+| `openai-reasoning` | o3-mini (Reasoning)                 |
+| `searchgpt`        | SearchGPT (web search required)     |
+| `mistral`          | Mistral 3.1 (Vision)                |
+| `deepseek-r1`      | DeepSeek R1-Qwen (Reasoning)        |
+| `deepseek-r1-llama`| DeepSeek R1-Llama 70B (Reasoning)   |
+| `llama`            | Llama 3.3 70B                      |
+| `llamalight`       | Llama 3.1 8B                       |
+| `gemini`           | Gemini 2.0 Flash                   |
+| `gemini-thinking`  | Gemini 2.0 Flash Thinking          |
+| `qwen-coder`       | Qwen 2.5 Coder 32B                 |
+| `claude`           | Claude 3.5 Haiku                   |
+| `phi`              | Phi-4 Instruct                     |
 
 > 📌 For the full model list, visit **[Pollinations Models](https://text.pollinations.ai/models)**. Note: Models like "unity" and "midijourney" are for niche use cases, and some DeepSeek models may return errors.
 
