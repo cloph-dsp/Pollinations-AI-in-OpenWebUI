@@ -39,8 +39,7 @@ _Access top language models for free_
 | `claude`           | Claude 3.5 Haiku           |
 | `phi`              | Phi-4 Instruct             |
 
-> 📌 Full model list available at: **https://text.pollinations.ai/models**
-> Models "unity" and "midijourney" are not needed, and DeepSeek models (´deepseek´, ´deekseek-reasoner´) may return an error.
+> 📌 For the full model list, visit **[Pollinations Models](https://text.pollinations.ai/models)**. Note: Models like "unity" and "midijourney" are for niche use cases, and some DeepSeek models may return errors.
 
 <details>
 <summary>Connection example</summary>
