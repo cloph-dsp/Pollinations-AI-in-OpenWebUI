@@ -1,72 +1,58 @@
-# How to Add **Pollinations AI Models** to **OpenWebUI**  
+# How to Add **Pollinations AI Text Models** to **OpenWebUI**  
 _Access top language models for free_
 
 ## What is Pollinations AI?
 
-[Pollinations AI](https://pollinations.ai) offers free API access to powerful language models like **GPT-4o**, **Mistral**, **Claude**, **Gemini**, **DeepSeek**, **LLaMA**, and more — no API key or billing required.
+[Pollinations AI](https://pollinations.ai) is an open-source gen AI startup from Berlin offering free, easy-to-use text and image generation APIs. No signups or API keys required, with zero data storage and completely anonymous usage. Access powerful models like **GPT-4o**, **Mistral**, **Claude**, and **Gemini** instantly.
 
-This guide shows how to connect Pollinations AI to **OpenWebUI** for instant access to these models.
+> **Note for Image Generation**: For image generation with Pollinations AI, install [this tool in OpenWebUI](https://openwebui.com/t/kaneki/image_generation) to handle image generation automatically.
 
----
+## Quick Setup
 
-## Setup in OpenWebUI
+### 1. In OpenWebUI, go to **Settings > Admin > Connections**
+- Click **"Add Connection"** under OpenAI API connections
 
-### 1. Go to **Settings > Admin > Connections**
+### 2. Configure as follows:
+| Field | Value |
+|-------|-------|
+| **URL** | `https://text.pollinations.ai/openai` |
+| **Key** | `dummy-key` (any text works) |
+| **Model IDs** | Add models from the list below |
 
-- on OpenAI connections, click **“Add Connection”** or edit an existing one.
+### 3. Click **"Save"** to add the models to OpenWebUI
 
-### 2. Configure the connection:
+## Available Models
 
-| Field        | Value                                       |
-|--------------|---------------------------------------------|
-| **URL**      | `https://text.pollinations.ai/openai`       |
-| **Key**      | `dummy-key` (any text works; not validated) |
-| **Model IDs**| Add one or more model names (see below)     |
+| Model ID           | Description                  |
+|--------------------|------------------------------|
+| `openai-large`     | GPT-4o                       |
+| `openai`           | GPT-4o-mini                 |
+| `openai-reasoning` | o3-mini (Reasoning)         |
+| `searchgpt`        | SearchGPT (web search req.) |
+| `mistral`          | Mistral 3.1 (Vision)        |
+| `deepseek-r1`      | DeepSeek R1-Qwen (Reasoning)|
+| `deepseek-r1-llama`| DeepSeek R1-Llama 70B       |
+| `llama`            | Llama 3.3 70B              |
+| `llamalight`       | Llama 3.1 8B               |
+| `gemini`           | Gemini 2.0 Flash           |
+| `qwen-coder`       | Qwen 2.5 Coder 32B         |
+| `claude`           | Claude 3.5 Haiku           |
+| `phi`              | Phi-4 Instruct             |
 
----
+> 📌 Full model list available at: **https://text.pollinations.ai/models**
 
-## Available Model IDs
+### Known Limitations
+- Models "unity" and "midijourney" are unsupported in OpenWebUI.
+- DeepSeek models (´deepseek´, ´deekseek-reasoner´) may return "500: API error: 402 Payment Required."
 
-You can add any of the following models:
+<details>
+<summary>Connection example</summary>
 
-| Model ID              | Description                              |
-|-----------------------|-------------------------------------------|
-| `openai-large`        | GPT-4o                                    |
-| `openai`              | GPT-4o-mini                               |
-| `openai-reasoning`    | o3-mini                                   |
-| `searchgpt`           | SearchGPT (web search is required)        |
-| `mistral`             | Mistral                                   |
-| `deepseek-r1`         | DeepSeek R1-Qwen                          |
-| `deepseek-r1-llama`   | DeepSeek R1-Llama                         |
-| `llama`               | Llama 3.3                                 |
-| `llamalight`          | Llama 3.1                                 |
-| `gemini`              | Gemini 2.0                                |
-| `qwen-coder`          | Qwen 2.5 Coder                            |
-| `claude`              | Claude 3.5 Haiku                          |
-| `phi`                 | Phi-4                                     |
-
-> 📌 You can always check the full model list at:  
-**https://text.pollinations.ai/models**
-
-### Model Compatibility and Issues
-
-Note: Some models like "unity" and "midijourney" are not useful in OpenWebUI. Additionally, models dependent on the DeepSeek API, such as "deepseek" and "deepseek-reasoner", may encounter a "500: DeepSeek API error: 402 Payment Required" error.
-
-### Example
-
-![Pollinations AI Connection Example](pollinations_connection.jpg)
-
----
-
-## 3. Save and use
-
-Click **“Save”** — the models will now be available in the OpenWebUI models list.
-
----
+![Connection Example](pollinations_connection.jpg)
+</details>
 
 ## Support the Project
-
-If you find this useful, consider sponsoring the Pollinations team:  
+If you find this useful, consider sponsoring Pollinations:  
 👉 **https://github.com/pollinations/pollinations**
 
-Your support helps keep AI free, open, and accessible to all.
+Your support helps keep AI free and accessible to all.
