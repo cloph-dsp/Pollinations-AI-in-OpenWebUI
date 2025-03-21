@@ -40,10 +40,7 @@ _Access top language models for free_
 | `phi`              | Phi-4 Instruct             |
 
 > 📌 Full model list available at: **https://text.pollinations.ai/models**
-
-### Known Limitations
-- Models "unity" and "midijourney" are unsupported in OpenWebUI.
-- DeepSeek models (´deepseek´, ´deekseek-reasoner´) may return "500: API error: 402 Payment Required."
+> Models "unity" and "midijourney" are not needed, and DeepSeek models (´deepseek´, ´deekseek-reasoner´) may return an error.
 
 <details>
 <summary>Connection example</summary>
