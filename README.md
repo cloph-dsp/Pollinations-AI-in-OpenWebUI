@@ -3,9 +3,9 @@ _Access top language models for free_
 
 ## What is Pollinations AI?
 
-[Pollinations AI](https://pollinations.ai) is an open-source gen AI startup from Berlin offering free, easy-to-use text and image generation APIs. No signups or API keys required, with zero data storage and completely anonymous usage. Access powerful models like **GPT-4o**, **Mistral**, **Claude**, and **Gemini** instantly.
+[Pollinations AI](https://pollinations.ai) offers free, easy-to-use text and image generation APIs. No signups or API keys required, with zero data storage and completely anonymous usage. Access powerful models like **GPT-4o**, **Mistral**, **Claude**, and **Gemini** instantly.
 
-> **Note for Image Generation**: For image generation with Pollinations AI, install [this tool in OpenWebUI](https://openwebui.com/t/kaneki/image_generation) to handle image generation automatically.
+> **Note for Image Generation**: For image generation with Pollinations AI, install [this tool](https://openwebui.com/t/kaneki/image_generation) in OpenWebUI.
 
 ## Quick Setup
 
