@@ -5,44 +5,26 @@ _Access top language models for free_
 
 [Pollinations AI](https://pollinations.ai) offers free, easy-to-use text and image generation APIs. No signups or API keys required, with zero data storage and completely anonymous usage. Access powerful models like **GPT-4o**, **Mistral**, **Claude**, and **Gemini** instantly.
 
-> **Note for Image Generation**: For image generation with Pollinations AI, install [this tool](https://openwebui.com/t/kaneki/image_generation) in OpenWebUI.
+> **Note for Image Generation**: For image generation with Pollinations AI, install [this tool](https://openwebui.com/t/kaneki/image_generation) or [this tool](https://openwebui.com/t/kuanjames/pollinations) in OpenWebUI.
 > 
-> **Function Pipe**: For easier access to these OpenAI models, use [this function pipe](https://openwebui.com/f/kastru/openai_models) in OpenWebUI.
+> **Function Pipe**: For easier access to Pollinations' OpenAI models specifically, use [this function pipe I created](https://openwebui.com/f/kastru/openai_models).
 
 ## Quick Setup
+1. In OpenWebUI go to **Settings > Admin > Connections** → **Add Connection** under OpenAI API.
+2. Enter:
+   - **URL:** `https://text.pollinations.ai/openai`
+   - **Key:** `dummy-key`
+   - **Model IDs:** choose from the list
+3. Click **Save**.
 
-### 1. In OpenWebUI, go to **Settings > Admin > Connections**
-- Click **"Add Connection"** under OpenAI API connections
+## List Models
+```bash
+curl https://text.pollinations.ai/models
+curl https://text.pollinations.ai/openai/models
+```
+> Some models (e.g. MidJourney or Unity) aren’t supported in OpenWebUI and availability may change. Run the list command to see current models.
 
-### 2. Configure as follows:
-| Field | Value |
-|-------|-------|
-| **URL** | `https://text.pollinations.ai/openai` |
-| **Key** | `dummy-key` (any text works) |
-| **Model IDs** | Add models from the list below |
-
-### 3. Click **"Save"** to add the models to OpenWebUI
-
-## Available Models
-
-| Model ID           | Description                          |
-|--------------------|--------------------------------------|
-| `openai-large`     | GPT-4o                               |
-| `openai`           | GPT-4o-mini                         |
-| `openai-reasoning` | o3-mini (Reasoning)                 |
-| `searchgpt`        | SearchGPT (web search required)     |
-| `mistral`          | Mistral 3.1 (Vision)                |
-| `deepseek-r1`      | DeepSeek R1-Qwen (Reasoning)        |
-| `deepseek-r1-llama`| DeepSeek R1-Llama 70B (Reasoning)   |
-| `llama`            | Llama 3.3 70B                      |
-| `llamalight`       | Llama 3.1 8B                       |
-| `gemini`           | Gemini 2.0 Flash                   |
-| `gemini-thinking`  | Gemini 2.0 Flash Thinking          |
-| `qwen-coder`       | Qwen 2.5 Coder 32B                 |
-| `claude`           | Claude 3.5 Haiku                   |
-| `phi`              | Phi-4 Instruct                     |
-
-> 📌 For the full model list, visit **[Pollinations Models](https://text.pollinations.ai/models)**. Note: Models like "unity" and "midijourney" are for niche use cases, and some DeepSeek models may return errors.
+You can also paste these commands into a web-based curl client like [ReqBin](https://reqbin.com/curl).
 
 <details>
 <summary>Connection example</summary>
