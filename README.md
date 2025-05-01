@@ -27,17 +27,18 @@ _Access top language models for free_
 curl https://text.pollinations.ai/models
 ```
 
-> Some models (e.g. MidJourney or Unity) aren’t supported in OpenWebUI and availability may change. Run the list command to see current models.  
-> You can also paste these commands into a web-based curl client like [ReqBin](https://reqbin.com/curl).  
+> Some models (e.g., midijourney, unity) aren’t supported in OpenWebUI.  
+> Run the list command to check available models.  
+> Use web-based curl clients like [ReqBin](https://reqbin.com/curl).  
 
-> Each returned object has a `"name"` field—copy that as your Model ID in OpenWebUI.  
-> Example: one entry will be
+> Copy the `"name"` field from the response as your Model ID.  
+> Example:  
 
 ```json
 { "name": "openai", … }
 ```
 
-so you’d use `openai` as the Model ID for gpt-4.1-mini.
+> Use `openai` for gpt-4.1-mini.
 
 <details>
 <summary>Connection example</summary>
